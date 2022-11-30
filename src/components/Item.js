@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './item.css';
+import '../utility/utility'
+
 
 
 
@@ -12,7 +14,12 @@ function GroupExample() {
     .then(res => res.json())
     .then(data => setitems(data))
     console.log(items)
-  },[])
+  }, []);
+
+  const handelAddToList = (item) =>{
+    console.log(item)
+  }
+
   return (
     items.map( item => (
       <div>
@@ -23,7 +30,9 @@ function GroupExample() {
               <h5 className="card-title">{item.name}</h5>
               <p>{item.id}</p>
               <p className="card-text">{item.description}</p>
-              <button className='w-100 btn btn-secondary'>Add to list</button>
+              <p id="itemTime">{item.time}</p>
+              
+              <button onClick={ ()=> handelAddToList(item)} className='w-100 btn btn-secondary'>Add to list</button>
             </div>
             
           </div>
