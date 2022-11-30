@@ -1,0 +1,43 @@
+[
+  {
+    "id": "0",
+    "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773443/GettyImages-598316814-e1499782861708-980x530_ififkq.webp",
+    "description": "In cricket, batting is the act or skill of hitting the ball with a bat to score runs and prevent the loss of one's wicket. Any player who is currently batting is, since September 2021, officially referred to as a batter, regardless of whether batting is their particular area of expertise.",
+    "name": "Batting"
+  },
+  {
+    "id": "1",
+    "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773579/CRICKETLAB_Cricket_Fielding_Tips_erp8mw.jpg",
+    "description": "Fielding in the sport of cricket is the action of fielders in collecting the ball after it is struck by the striking batter, to limit the number of runs that the striker scores and/or to get a batter out by either catching a hit ball before it bounces, or by running out either batter before they can complete ",
+    "name": "Fielding",
+    "time": "30min"
+  },
+  {
+    "id": "2",
+    "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773443/kiping_wmmhxq.jpg",
+    "description": "Et ipsum ex aute exercitation ut amet qui exercitation nulla nulla id. Cillum ea consequat reprehenderit magna et elit qui id veniam voluptate ut elit. Eiusmod esse quis aute Lorem. Labore pariatur consequat aliquip id excepteur cupidatat ad consequat proident duis sint commodo consectetur ea. Magna fugiat aute deserunt irure occaecat.\r\n",
+    "name": "wiket kiper",
+    "time": "30min"
+  },
+  {
+    "id": "3",
+    "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773511/v4-460px-Bowl-Fast-in-Cricket-Step-8-Version-5.jpg_pud13p.webp",
+    "description": "Magna quis proident pariatur in in elit. Ut aute cupidatat magna qui fugiat veniam consequat do. Aliqua aliquip occaecat ullamco do ea veniam minim culpa. Laboris adipisicing mollit nulla nulla.\r\n",
+    "name": "Bowling",
+    "time": "30min"
+  },
+  {
+    "id": "4",
+    "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773445/Slips_guqcxn.jpg",
+    "description": "Et ipsum ex aute exercitation ut amet qui exercitation nulla nulla id. Cillum ea consequat reprehenderit magna et elit qui id veniam voluptate ut elit. Eiusmod esse quis aute Lorem. Labore pariatur consequat aliquip id excepteur cupidatat ad consequat proident duis sint commodo consectetur ea. Magna fugiat aute deserunt irure occaecat.\r\n",
+    "name": "Sliping",
+    "time": "30min"
+  },
+  {
+    "id": "5",
+    "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773821/143654-bxtvqiauzk-1593501914_crjtbu.jpg",
+    "description": "Magna quis proident pariatur in in elit. Ut aute cupidatat magna qui fugiat veniam consequat do. Aliqua aliquip occaecat ullamco do ea veniam minim culpa. Laboris adipisicing mollit nulla nulla.\r\n",
+    "name": "Catching",
+    "time": "30min"
+  }
+]
