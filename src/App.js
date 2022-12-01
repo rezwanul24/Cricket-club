@@ -5,19 +5,37 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle'
 import Header from './components/Header';
 import Item from './components/Item';
+import { useEffect, useState } from 'react';
 
 
 
 function App() {
+
+  const [items, setitems] = useState([]);
+  useEffect(() => {
+    fetch('cricket_data.json')
+    .then(res => res.json())
+    .then(data => setitems(data))
+    
+  }, []);
+
+  
+
   return (
-    <div className="App">
+    
+      <div className="App">
       <div className="row">
         <section className=" col-9 main">
           <div className="container">
             <Header></Header>
-            
             <div className="item-container">
-            <Item></Item>
+            {
+              items.map(item => 
+                
+                <Item data={item}></Item>
+                
+                )
+            }
             </div>
             
           </div>
@@ -63,7 +81,8 @@ function App() {
         </section>
       </div>
     </div>
-  );
-}
+    )
+  ;}
+
 
 export default App;

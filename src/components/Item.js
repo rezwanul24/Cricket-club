@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './item.css';
 import '../utility/utility'
@@ -6,41 +6,31 @@ import '../utility/utility'
 
 
 
-function GroupExample() {
-
-  const [items, setitems] = useState([]);
-  useEffect(() => {
-    fetch('cricket_data.json')
-    .then(res => res.json())
-    .then(data => setitems(data))
-    console.log(items)
-  }, []);
-
-  const handelAddToList = (item) =>{
-    console.log(item)
-  }
+function Item( props) {
+  console.log(props)
+ const {picture, name, id , time, description} = (props.data);
 
   return (
-    items.map( item => (
+    
       <div>
           <div className="card-group">
           <div className="card">
-            <img src={item.picture} className="card-img-top" alt="..."/>
+            <img src={picture} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title">{item.name}</h5>
-              <p>{item.id}</p>
-              <p className="card-text">{item.description}</p>
-              <p id="itemTime">{item.time}</p>
+              <h5 className="card-title">{name}</h5>
+              <p>{id}</p>
+              <p className="card-text">{description}</p>
+              <p id="itemTime">{time}</p>
               
-              <button onClick={ ()=> handelAddToList(item)} className='w-100 btn btn-secondary'>Add to list</button>
+              {/* <button onClick={ ()=> handelAddToList(item)} className='w-100 btn btn-secondary'>Add to list</button> */}
             </div>
             
           </div>
           
         </div>
       </div>
-    ))
-  );
+    )
+  ;
 }
 
-export default GroupExample;
+export default Item;
