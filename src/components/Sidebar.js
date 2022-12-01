@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import './sidebar.css';
 import {addToLocalStorage} from '../utility/utility'
+import ToasT from './ToasT';
 
 const Sidebar = ({activityItem}) => {
 
@@ -49,7 +50,8 @@ const Sidebar = ({activityItem}) => {
               <input className='mt-3 form-control' type="text" name="" placeholder={`Excrice Time: ${activityItem} min`} id="" />
               <input className='mt-3 form-control' type="text" name="" placeholder={`Break time: ${breakTime} min`} id="" />
             </div>
-            <button className='w-100 mt-3 btn btn-secondary' type="submit">Activity compilited</button>
+            <ToasT></ToasT>
+            <button className='w-100 mt-3 btn btn-secondary' type="submit"><ToasT></ToasT></button>
         </div>
     );
 };
