@@ -7,8 +7,9 @@ import '../utility/utility'
 
 
 function Item( props) {
-  console.log(props)
+  // console.log(props)
  const {picture, name, id , time, description} = (props.data);
+ const { handelAddToTime} = props;
 
   return (
     
@@ -18,11 +19,11 @@ function Item( props) {
             <img src={picture} className="card-img-top" alt="..."/>
             <div className="card-body">
               <h5 className="card-title">{name}</h5>
-              <p>{id}</p>
+              <p>ID:{id}</p>
               <p className="card-text">{description}</p>
-              <p id="itemTime">{time}</p>
+              <p id="itemTime">Time: {time}</p>
               
-              {/* <button onClick={ ()=> handelAddToList(item)} className='w-100 btn btn-secondary'>Add to list</button> */}
+              <button onClick={ ()=> handelAddToTime(props.data)} className='w-100 btn btn-secondary'>Add to list</button>
             </div>
             
           </div>
