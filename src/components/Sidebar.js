@@ -16,7 +16,7 @@ const Sidebar = ({activityItem}) => {
   }
     return (
         <div>
-            <div className='row mt-5'>
+            <div className='row mt-5 '>
               <img className='profile-photo col-3 mt-2' src="https://res.cloudinary.com/dmhq6htq4/image/upload/v1669774301/profile_of_youtube_rvofma.png" alt="" srcset="" />
               <div className='col-9'>
                 <h3>Rezwanul Haque</h3>
@@ -25,7 +25,7 @@ const Sidebar = ({activityItem}) => {
             </div>
             <div className='row mt-3'>
               <div className='col-4'>
-                <h3>50 <span>kg</span></h3>
+                <h3>50<span>kg</span></h3>
                 <p>Weight</p>
               </div>
               <div className='col-4'>
@@ -33,7 +33,7 @@ const Sidebar = ({activityItem}) => {
                 <p>Height</p>
               </div>
               <div className='col-4'>
-                <h3>25 <span>yrs</span></h3>
+                <h3>25<span>yrs</span></h3>
                 <p>Age</p>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Sidebar = ({activityItem}) => {
               <input className='mt-3 form-control' type="text" name="" placeholder={`Break time: ${breakTime} min`} id="" />
             </div>
             <ToasT></ToasT>
-            <button className='w-100 mt-3 btn btn-secondary' type="submit"><ToasT></ToasT></button>
+            
         </div>
     );
 };

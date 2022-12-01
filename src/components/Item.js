@@ -9,7 +9,7 @@ import '../utility/utility'
 function Item( props) {
   // console.log(props)
  const {data, handelAddToTime} = props;
- const {picture, name, id , time, description} = (data);
+ const {picture, name , time, description} = (data);
 
   return (
     
@@ -19,7 +19,7 @@ function Item( props) {
             <img src={picture} className="card-img-top" alt="..."/>
             <div className="card-body">
               <h5 className="card-title">{name}</h5>
-              <p>ID:{id}</p>
+              
               <p className="card-text">{description}</p>
               <p id="itemTime">Time: {time} min</p>
               

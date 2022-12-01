@@ -7,6 +7,7 @@ import Item from './components/Item';
 import { useEffect, useState } from 'react';
 import Sidebar from './components/Sidebar';
 import { addTime } from "./utility/utility";
+import Question from './components/Question';
 
 
 
@@ -33,7 +34,7 @@ function App() {
     
       <div className="App">
       <div className="row">
-        <section className=" col-9 main">
+        <section className=" col-md-9 col-sm-12 main">
           <div className="container">
             <Header></Header>
             <div className="item-container">
@@ -43,11 +44,13 @@ function App() {
                 )
             }
             </div>
-            
+            <div>
+              <Question></Question>
+            </div>
           </div>
         </section>
-        <section className=" col-3  side-bar">
-          <div className="container-fluid">
+        <section className=" col-md-3 col-sm-12 side-bar">
+          <div className="container-fluid sticky-md-top">
             <Sidebar activityItem={activityItem}></Sidebar>
           </div>
         </section>
