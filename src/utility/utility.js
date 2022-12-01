@@ -28,4 +28,15 @@ const addToLocalStorage = (props) => {
   localStorage.setItem("take-a-break", breakTime);
 };
 
-  export { addTime, addToLocalStorage };
+const getSaveTime = () => {
+  let breakTime = [];
+
+  //get the time from local storage
+  const saveTime = localStorage.getItem("take-a-break");
+  if (saveTime) {
+    breakTime = saveTime;
+  }
+  return breakTime;
+};
+
+  export { addTime, addToLocalStorage , getSaveTime };

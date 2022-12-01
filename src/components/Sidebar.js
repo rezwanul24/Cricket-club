@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import './sidebar.css';
-import {addToLocalStorage} from '../utility/utility'
+import {addToLocalStorage, getSaveTime} from '../utility/utility'
 import ToasT from './ToasT';
 
 const Sidebar = ({activityItem}) => {
@@ -14,6 +14,12 @@ const Sidebar = ({activityItem}) => {
     setBreakTime(getbreakTime);
     addToLocalStorage(getbreakTime);
   }
+  
+  useEffect(() => {
+    const time = getSaveTime();
+    setBreakTime(time)
+  },[])
+
     return (
         <div>
             <div className='row mt-5 '>
