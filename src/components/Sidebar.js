@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocation } from '@fortawesome/free-solid-svg-icons'
+import { faLocation } from '@fortawesome/free-solid-svg-icons';
+import './sidebar.css';
+import {addToLocalStorage} from '../utility/utility'
 
-const Sidebar = () => {
+const Sidebar = ({activityItem}) => {
+
+  const [breakTime, setBreakTime] = useState(0)
+
+  const breakTimeDisplay = (event) => {
+    const getbreakTime = ( event.target.innerText);
+    setBreakTime(getbreakTime);
+    addToLocalStorage(getbreakTime);
+  }
     return (
         <div>
             <div className='row mt-5'>
@@ -28,16 +38,16 @@ const Sidebar = () => {
             </div>
             <h3>Add a break</h3>
             <div className='d-flex  mt-3'>
-              <p className='b-time rounded-circle d-flex justify-content-center mx-2'>2m</p>
-              <p className='b-time rounded-circle d-flex justify-content-center mx-2'>5m</p>
-              <p className='b-time rounded-circle d-flex justify-content-center mx-2'>10m</p>
-              <p className='b-time rounded-circle d-flex justify-content-center mx-2'>15m</p>
-              <p className='b-time rounded-circle d-flex justify-content-center mx-2'>20m</p>
+              <button onClick={(event)=> breakTimeDisplay(event)} className='b-time rounded-circle d-flex justify-content-center mx-2'>2</button>
+              <button onClick={(event)=>breakTimeDisplay(event)} className='b-time rounded-circle d-flex justify-content-center mx-2'>5</button>
+              <button onClick={(event)=>breakTimeDisplay(event)} className='b-time rounded-circle d-flex justify-content-center mx-2'>10</button>
+              <button onClick={(event)=>breakTimeDisplay(event)} className='b-time rounded-circle d-flex justify-content-center mx-2'>15</button>
+              <button onClick={(event)=>breakTimeDisplay(event)} className='b-time rounded-circle d-flex justify-content-center mx-2'>20</button>
             </div>
             <h3 className='mt-3'>Exercise Details</h3>
             <div>
-              <input className='mt-3 form-control' type="text" name="" placeholder='Exercise time' id="" />
-              <input className='mt-3 form-control' type="text" name="" placeholder='Break time' id="" />
+              <input className='mt-3 form-control' type="text" name="" placeholder={`Excrice Time: ${activityItem} min`} id="" />
+              <input className='mt-3 form-control' type="text" name="" placeholder={`Break time: ${breakTime} min`} id="" />
             </div>
             <button className='w-100 mt-3 btn btn-secondary' type="submit">Activity compilited</button>
         </div>

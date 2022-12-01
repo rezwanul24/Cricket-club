@@ -4,41 +4,41 @@
     "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773443/GettyImages-598316814-e1499782861708-980x530_ififkq.webp",
     "description": "In cricket, batting is the act or skill of hitting the ball with a bat to score runs and prevent the loss of one's wicket. Any player who is currently batting is, since September 2021, officially referred to as a batter, regardless of whether batting is their particular area of expertise.",
     "name": "Batting",
-    "time": "30min"
+    "time": 30
   },
   {
     "id": "1",
     "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773579/CRICKETLAB_Cricket_Fielding_Tips_erp8mw.jpg",
     "description": "Fielding in the sport of cricket is the action of fielders in collecting the ball after it is struck by the striking batter, to limit the number of runs that the striker scores and/or to get a batter out by either catching a hit ball before it bounces, or by running out either batter before they can complete ",
     "name": "Fielding",
-    "time": "30min"
+    "time": 20
   },
   {
     "id": "2",
     "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773443/kiping_wmmhxq.jpg",
     "description": "The wicket-keeper in the sport of cricket is the player on the fielding side who stands behind the wicket or stumps being watchful of the batsman and ready to take a catch, stump the batsman out and run out a batsman when occasion arises.the batsman and ready to take a catch, ",
     "name": "wicket-keeper",
-    "time": "30min"
+    "time": 30
   },
   {
     "id": "3",
     "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773511/v4-460px-Bowl-Fast-in-Cricket-Step-8-Version-5.jpg_pud13p.webp",
     "description": "Bowling, in cricket, is the action of propelling the ball toward the wicket defended by a batter. A player skilled at bowling is called a bowler; a bowler who is also a competent batter is known as an all-rounder.a bowler who is also a competent batter is known as an all-rounder.",
     "name": "Bowling",
-    "time": "30min"
+    "time": 40
   },
   {
     "id": "4",
     "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773445/Slips_guqcxn.jpg",
     "description": "Fielding in the sport of cricket is the action of fielders in collecting the ball after it is struck by the striking batter, to limit the number of runs that the striker scores and/or to get a batter out by either catching a hit ball before it bounces, or by running out either batter before they can complete ",
     "name": "Sliping",
-    "time": "30min"
+    "time": 30
   },
   {
     "id": "5",
     "picture": "https://res.cloudinary.com/dmhq6htq4/image/upload/v1669773821/143654-bxtvqiauzk-1593501914_crjtbu.jpg",
     "description": "Fielding in the sport of cricket is the action of fielders in collecting the ball after it is struck by the striking batter, to limit the number of runs that the striker scores and/or to get a batter out by either catching a hit ball before it bounces, or by running out either batter before they can complete ",
     "name": "Catching",
-    "time": "30min"
+    "time": 35
   }
 ]

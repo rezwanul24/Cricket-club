@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Item from './components/Item';
 import { useEffect, useState } from 'react';
 import Sidebar from './components/Sidebar';
+import { addTime } from "./utility/utility";
 
 
 
@@ -19,9 +20,13 @@ function App() {
     
   }, []);
 
-  
-  const handelAddToTime = (itemId) => {
-    console.log(itemId);
+  const [activityItem, setActivityItem] = useState(0);
+
+  const handelAddToTime = (itemData) => {
+    // console.log(itemData);
+    // let newItem = [...activityItem, itemData];
+    setActivityItem(itemData.time+activityItem);
+    addTime(itemData.name);
   }
 
   return (
@@ -43,7 +48,7 @@ function App() {
         </section>
         <section className=" col-3  side-bar">
           <div className="container-fluid">
-            <Sidebar></Sidebar>
+            <Sidebar activityItem={activityItem}></Sidebar>
           </div>
         </section>
       </div>
